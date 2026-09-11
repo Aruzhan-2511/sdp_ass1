@@ -15,4 +15,13 @@ buildPremiumCar();
 ```
 For example, the name `buildBasicCar()` clearly shows that the method creates a basic car configuration.
 
+### 2. Small Methods
+Each method has one simple task.
+```java
+public CarBuilder setColor(String color){
+    this.color = color;
+    return this;
+}
+```
+This method only sets the color and returns the builder.
 
