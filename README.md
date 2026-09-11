@@ -45,3 +45,17 @@ public carBuilder setBrand(String brand){
 ```
 Using the same style makes the code easier to read.
 
+### 5. Method Chaining
+Builder methods return the same builder object using `return this`.
+```java
+ public Car buildPremiumCar(){
+    return new CarBuilder()
+            .setBrand("BMW")
+            .setModel("X5")
+            .setColor("Black")
+            .setYear(2024)
+            .setEngine("2.8L")
+            .build();
+}
+```
+this makes the construction process clear and readable.
