@@ -25,3 +25,12 @@ public CarBuilder setColor(String color){
 ```
 This method only sets the color and returns the builder.
 
+### 3. Small and Focused Classes
+Each class has its own responsibility
+```text
+Car         - stores car information
+CarBuilder  - builds a car
+CarDirector - defines ready car configurations
+Main        - tests the program
+```
+This keeps the code simple and easy to understand.
