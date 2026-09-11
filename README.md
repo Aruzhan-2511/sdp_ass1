@@ -58,4 +58,4 @@ Builder methods return the same builder object using `return this`.
             .build();
 }
 ```
-this makes the construction process clear and readable.
+This makes the construction process clear and readable.
