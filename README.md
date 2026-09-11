@@ -34,3 +34,14 @@ CarDirector - defines ready car configurations
 Main        - tests the program
 ```
 This keeps the code simple and easy to understand.
+
+### 4. Consistent Formatting 
+The same structure and formatting are used for all builder methods.
+```java
+public carBuilder setBrand(String brand){
+    this.brand = brand;
+    return this;
+}
+```
+Using the same style makes the code easier to read.
+
