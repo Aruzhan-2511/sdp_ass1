@@ -1,31 +1,31 @@
 public class PizzaBuilder {
-    private String brand;
-    private String model;
-    private String color;
-    private int year;
-    private String engine;
+    private String size;
+    private String crust;
+    private String sauce;
+    private String cheese;
+    private String topping;
 
-    public PizzaBuilder setBrand(String brand){
-        this.brand=brand;
+    public PizzaBuilder setSize(String size){
+        this.size= size;
         return this;
     }
-    public PizzaBuilder setModel(String model){
-        this.model=model;
+    public PizzaBuilder setCrust(String crust){
+        this.crust= crust;
         return this;
     }
-    public PizzaBuilder setColor(String color){
-        this.color=color;
+    public PizzaBuilder setSauce(String sauce){
+        this.sauce= sauce;
         return this;
     }
-    public PizzaBuilder setYear(int year){
-        this.year=year;
+    public PizzaBuilder setCheese(String cheese){
+        this.cheese= cheese;
         return this;
     }
-    public PizzaBuilder setEngine(String engine){
-        this.engine=engine;
+    public PizzaBuilder setTopping(String topping){
+        this.topping= topping;
         return this;
     }
     public Pizza build(){
-        return new Pizza(brand, model, color, year, engine);
+        return new Pizza(size, crust, sauce, cheese, topping);
     }
 }
