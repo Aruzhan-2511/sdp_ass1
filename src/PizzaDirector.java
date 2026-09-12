@@ -1,6 +1,6 @@
-public class CarDirector {
-    public Car buildBasicCar(){
-        return new CarBuilder()
+public class PizzaDirector {
+    public Pizza buildBasicCar(){
+        return new PizzaBuilder()
                 .setBrand("Toyota")
                 .setModel("Corolla")
                 .setColor("White")
@@ -8,8 +8,8 @@ public class CarDirector {
                 .setEngine("2.5L")
                 .build();
     }
-    public Car buildPremiumCar(){
-        return new CarBuilder()
+    public Pizza buildPremiumCar(){
+        return new PizzaBuilder()
                 .setBrand("BMW")
                 .setModel("X5")
                 .setColor("Black")

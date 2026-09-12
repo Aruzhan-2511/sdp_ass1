@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args){
-        CarDirector director = new CarDirector();
-        Car basicCar = director.buildBasicCar();
-        Car premiumCar = director.buildPremiumCar();
-        System.out.println("Basic car: "+ basicCar);
-        System.out.println("Premium car: "+premiumCar);
+        PizzaDirector director = new PizzaDirector();
+        Pizza basicPizza = director.buildBasicCar();
+        Pizza premiumPizza = director.buildPremiumCar();
+        System.out.println("Basic car: "+ basicPizza);
+        System.out.println("Premium car: "+ premiumPizza);
     }
 }

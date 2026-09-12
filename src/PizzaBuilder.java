@@ -1,31 +1,31 @@
-public class CarBuilder {
+public class PizzaBuilder {
     private String brand;
     private String model;
     private String color;
     private int year;
     private String engine;
 
-    public CarBuilder setBrand(String brand){
+    public PizzaBuilder setBrand(String brand){
         this.brand=brand;
         return this;
     }
-    public CarBuilder setModel(String model){
+    public PizzaBuilder setModel(String model){
         this.model=model;
         return this;
     }
-    public CarBuilder setColor(String color){
+    public PizzaBuilder setColor(String color){
         this.color=color;
         return this;
     }
-    public CarBuilder setYear(int year){
+    public PizzaBuilder setYear(int year){
         this.year=year;
         return this;
     }
-    public CarBuilder setEngine(String engine){
+    public PizzaBuilder setEngine(String engine){
         this.engine=engine;
         return this;
     }
-    public Car build(){
-        return new Car(brand, model, color, year, engine);
+    public Pizza build(){
+        return new Pizza(brand, model, color, year, engine);
     }
 }
