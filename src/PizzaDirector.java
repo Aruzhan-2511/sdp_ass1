@@ -1,20 +1,20 @@
 public class PizzaDirector {
-    public Pizza buildBasicCar(){
+    public Pizza buildClassicPizza(){
         return new PizzaBuilder()
-                .setBrand("Toyota")
-                .setModel("Corolla")
-                .setColor("White")
-                .setYear(2025)
-                .setEngine("2.5L")
+                .setSize("Medium")
+                .setCrust("Thin")
+                .setSauce("Tomato")
+                .setCheese("Mozzarella")
+                .setTopping("Pepperoni")
                 .build();
     }
-    public Pizza buildPremiumCar(){
+    public Pizza buildVegetarianPizza(){
         return new PizzaBuilder()
-                .setBrand("BMW")
-                .setModel("X5")
-                .setColor("Black")
-                .setYear(2024)
-                .setEngine("2.8L")
+                .setSize("Large")
+                .setCrust("Classic")
+                .setSauce("Tomato")
+                .setCheese("Mozzarella")
+                .setTopping("Vegetables")
                 .build();
     }
 }
