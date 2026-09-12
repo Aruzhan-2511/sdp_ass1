@@ -1,45 +1,47 @@
-# Car Builder Pattern
+# Pizza Builder Pattern
 ## Project Description
 This project demonstrates the Builder Design Pattern in Java.
-This project is a Car with different properties such as brand, model, color, year, and engine. CarBuilder creates a car step by step, while CarDirector provides predefined Basic and Premium car configurations. 
-The Main class tests the program and displays the created cars.
+This project is a Pizza with different properties such as size, crust, sauce, cheese, topping. PizzaBuilder creates a pizza step by step, while PizzaDirector provides predefined Classic and Vegetarian pizza configurations. 
+The Main class tests the program and displays the created pizzas.
 
 ## Clean Code Principles
 ### 1. Meaningful Names
 Classes and methods have clear names that describe their purpose.
+
 ```java
-CarBuilder
-CarDirector;
-buildBasicCar();
-buildPremiumCar();
+PizzaBuilder
+PizzaDirector;
+buildClassicPizza();
+buildVegetarianPizza();
 ```
-For example, the name `buildBasicCar()` clearly shows that the method creates a basic car configuration.
+For example, the name `buildClassicPizza()` clearly shows that the method creates a classic pizza configuration.
 
 ### 2. Small Methods
 Each method has one simple task.
+
 ```java
-public CarBuilder setColor(String color){
-    this.color = color;
+public PizzaBuilder setCheese(String cheese){
+    this.cheese= cheese;
     return this;
 }
 ```
-This method only sets the color and returns the builder.
+This method only sets the cheese and returns the builder.
 
 ### 3. Small and Focused Classes
 Each class has its own responsibility
 ```text
-Car         - stores car information
-CarBuilder  - builds a car
-CarDirector - defines ready car configurations
-Main        - tests the program
+Pizza         - stores pizza information
+PizzaBuilder  - builds a pizza
+PizzaDirector - defines ready pizza configurations
+Main          - tests the program
 ```
 This keeps the code simple and easy to understand.
 
 ### 4. Consistent Formatting 
 The same structure and formatting are used for all builder methods.
 ```java
-public carBuilder setBrand(String brand){
-    this.brand = brand;
+public PizzaBuilder setSize(String size){
+    this.size= size;
     return this;
 }
 ```
@@ -47,14 +49,15 @@ Using the same style makes the code easier to read.
 
 ### 5. Method Chaining
 Builder methods return the same builder object using `return this`.
+
 ```java
- public Car buildPremiumCar(){
-    return new CarBuilder()
-            .setBrand("BMW")
-            .setModel("X5")
-            .setColor("Black")
-            .setYear(2024)
-            .setEngine("2.8L")
+public Pizza buildClassicPizza(){
+    return new PizzaBuilder()
+            .setSize("Medium")
+            .setCrust("Thin")
+            .setSauce("Tomato")
+            .setCheese("Mozzarella")
+            .setTopping("Pepperoni")
             .build();
 }
 ```
