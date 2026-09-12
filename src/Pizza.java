@@ -1,18 +1,18 @@
 public class Pizza {
-    private String brand;
-    private String model;
-    private String color;
-    private int year;
-    private String engine;
+    private String size;
+    private String crust;
+    private String sauce;
+    private String cheese;
+    private String topping;
 
-    public Pizza(String brand, String model, String color, int year, String engine){
-        this.brand=brand;
-        this.model=model;
-        this.color=color;
-        this.year=year;
-        this.engine=engine;
+    public Pizza(String size, String crust, String sauce, String cheese, String topping){
+        this.size= size;
+        this.crust= crust;
+        this.sauce= sauce;
+        this.cheese= cheese;
+        this.topping =topping;
     }
     public String toString(){
-        return brand + " " + model + ", " + color + ", " + year + ", " + engine;
+        return size + " " + crust + ", " + sauce + ", " + cheese + ", " + topping;
     }
 }
